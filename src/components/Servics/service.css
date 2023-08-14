@@ -1,0 +1,156 @@
+.servi {
+    width: 100%;
+    margin-top: -99px;
+    background-color: rgba(71, 103, 159, 0.3);
+  }
+  
+
+
+  .service {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e272e;
+    font-family: 'Rubik', sans-serif;
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .service::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #47679f;
+    position: absolute;
+    bottom: -8px;
+    left: calc(49.7% - 30px);
+    border-radius: 2px;
+  }
+  
+  
+  .slogan {
+    font-size: 1.4rem;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    text-justify: inter-word;
+    font-weight: 500;
+  }
+  
+  .Box {
+    background-color: rgb(255, 255, 255);
+    width: 31%;
+    margin: 48px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding-bottom: 45px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    transition-property: box-shadow, transform;
+    transition-duration: 350ms;
+    transition-timing-function: ease-in-out;
+  
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.24);
+  }
+  
+  
+  .Box:hover {
+    background-position: 100% 100%;
+  }
+  
+  .Box:is(:hover, :focus) {
+    box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.5);
+    transform: translateY(-8px);
+  }
+  
+  .container3 {
+    white-space: nowrap;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 85px;
+    margin-top: -128px;
+    margin-bottom: -237px;
+    flex-wrap: wrap;
+  }
+  
+  .img4 {
+    margin-top: 50px;
+    margin-bottom: 2px;
+  }
+  
+  .text11 {
+    padding: 2px 0;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  
+  .Text11 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    
+  }
+
+  @media screen and (max-width: 1391px) {
+
+.container3{
+
+    white-space: nowrap;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 85px;
+    margin-top: -128px;
+    margin-bottom: -237px;
+    flex-wrap: wrap;
+
+}
+
+.Box{
+
+    width: 573px;
+
+}
+
+.text11{
+
+    font-size: 1.4rem;
+}
+
+.Text11{
+
+    font-size: 1.2rem;
+    padding: 12px;
+
+}
+
+}
+
+@media screen and (max-width: 691px) { 
+
+
+    .text11{
+
+        font-size: 1rem;
+    }
+    
+    .Text11{
+    
+        font-size: 1rem;
+        padding: 12px;
+        width: 324px;
+    
+    }
+
+
+
+}

@@ -1,0 +1,60 @@
+.scroll-container1 {
+    overflow: hidden;
+    height: 200px;
+    margin-bottom: 70px;
+
+}
+
+.ani{
+
+    margin-left: 125px;
+
+}
+
+/* .tt {
+    position: relative; 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #333;
+    text-align: center;
+    text-transform: uppercase; 
+    margin-bottom: 20px;
+  }
+
+.tt::after {
+    content: '';
+    display: block;
+    width: 92px; 
+    height: 3px; 
+    background-color: #47679f; 
+    position: absolute;
+    bottom: -10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+  } */
+
+  .tt {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    color: #1e272e;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  
+  .tt::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #47679f;
+    position: absolute;
+    bottom: -8px;
+    left: calc(50% - 40px);
+    border-radius: 2px;
+  }
+  
+  
+  

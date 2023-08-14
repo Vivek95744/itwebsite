@@ -1,0 +1,230 @@
+.other {
+  margin-top: 318px;
+  margin-bottom: 75px;
+}
+
+.tex {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1e272e;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.tex::after {
+  content: '';
+  display: block;
+  width: 157px;
+  height: 3px;
+  background-color: #47679f;
+  position: absolute;
+  bottom: -8px;
+  left: calc(47% - 40px);
+  border-radius: 2px;
+}
+
+
+.Tex {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.other1 {
+  padding: 30px;
+  display: flex;
+}
+
+.Others {
+  display: flex;
+}
+
+.Others1 {
+  padding-left: 36px;
+}
+
+.tex1 {
+  font-size: 1.2rem;
+  padding-bottom: 33px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: justify;
+}
+
+.dimond {
+ display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: stretch;
+}
+
+.texe {
+  margin-left: 13px;
+  margin-top: 0px;
+}
+
+.Texe {
+  margin-left: 44px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.counte {
+  padding-top: 50px;
+  font-size: 45px;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #47679f;
+}
+
+.l {
+  margin: 0;
+  font-size: 15px;
+}
+
+.re {
+  margin-top: 86px;
+  background-color: #47679f;
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.toc {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.Toc {
+  color: #ffffff;
+  margin-top: 10px;
+  max-width: 600px; /* Limit the width for better readability */
+}
+
+.Re {
+  margin-top: 20px;
+}
+
+.wrapper {
+  cursor: pointer;
+}
+
+.battan {
+  display: inline-block;
+  width: 336px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  margin-top: 20px;
+}
+
+.battan span {
+  position: relative;
+  z-index: 2;
+}
+
+.battan:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ffffff;
+  transition: all 0.35s;
+}
+
+.battan:hover {
+  color: #47679f;
+}
+
+.battan:hover:after {
+  width: 100%;
+}
+
+@media screen and (max-width: 1360px) {
+  .other1 {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .Texe {
+    margin-left: 14px;
+  }
+  .Others1 {
+    padding-top: 36px;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .img55 {
+    height: 350px;
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .img55 {
+    height: 300px;
+    width: 400px;
+  }
+
+  .tex1 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .img55 {
+    height: 200px;
+    width: 250px;
+  }
+  .tex1 {
+    font-size: 0.9rem;
+  }
+
+  .counte {
+    font-size: 27px;
+  }
+
+  .l {
+    font-size: 13px;
+  }
+
+  .Tex {
+    padding: 0.5rem;
+  }
+  
+}
