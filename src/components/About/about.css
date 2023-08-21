@@ -50,7 +50,7 @@ margin-top: 12px !important;
   display: block;
   width: 80px;
   height: 3px;
-  background-color: #47679f;
+  background-color: var(--colour5);
   position: absolute;
   bottom: -8px;
   left: calc(50% - 40px);
@@ -74,6 +74,67 @@ margin-top: 12px !important;
   text-align: left;
 }
 
+@media screen and (min-width: 3001px) {
+  .about-container {
+    gap: 900px;
+  }
+}
+
+@media screen and (max-width: 3000px) {
+
+  .about-container {
+
+    gap: 800px;
+
+
+  }
+
+}
+
+@media screen and (max-width: 2200px) {
+
+  .about-container {
+
+    gap: 400px;
+
+
+  }
+
+}
+
+@media screen and (max-width: 1850px) {
+
+  .about-container {
+
+    gap: 200px;
+
+
+  }
+
+}
+
+
+@media screen and (max-width: 1450px) {
+
+  .about-container {
+
+    gap: 50px;
+
+
+  }
+
+}
+
+@media screen and (max-width: 1180px) {
+
+  .about-container {
+
+    gap: 0px;
+
+
+  }
+
+}
 
 @media screen and (max-width: 1050px) {
   .about-container {

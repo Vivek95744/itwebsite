@@ -3,9 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #47679f;
     color: white;
-    padding: 10px 20px;
     display: none;
   }
 
@@ -34,7 +32,7 @@ display: flex;
     border: none;
     cursor: pointer;
     font-size: 34px;
-    color: rgb(0, 0, 0);
+    color: var(--colour5);
   }
   
   .navbar-nav {
@@ -62,11 +60,11 @@ display: flex;
     transition: background-color 0.2s;
     cursor: pointer;
     font-size: 23px;
-    color: #47679f;
+    color: var(--colour5);
   }
   
   .navbar.scrolled {
-    background: #ffff;
+    background: var(--colour1);
   }
   
   .expanded .navbar-nav {
@@ -83,15 +81,16 @@ display: flex;
         position: sticky;
         top: 0;
         z-index: 100;
-        background-color: #47679f;
+        background-color: #ffffff;
         transition: background-color 0.3s ease-in-out;
         justify-content: space-between;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.185);
     }
   
   
   .responsive_nav.scrolled {
-    background: #ffff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.185);
   }
   
   
@@ -101,16 +100,19 @@ display: flex;
   
   .brand {
     margin-top: 10px;
-    color: #000000;
+    color: var(--colour5);
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
+    margin-left: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
   }
   
   .Homenav {
     margin-top: 17px;
     padding-right: 36px;
-    color: #000000;
+    color: var(--colour5);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -128,7 +130,7 @@ display: flex;
     height: 3px;
     bottom: 7px;
     left: 0;
-    background-color: #000000;
+    background-color: var(--colour5);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
@@ -142,7 +144,7 @@ display: flex;
     margin-left: 2px;
     margin-top: 17px;
     padding-right: 36px;
-    color: #000000;
+    color: var(--colour5);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -160,7 +162,7 @@ display: flex;
     height: 3px;
     bottom: 7px;
     left: 0;
-    background-color: #000000;
+    background-color: var(--colour5);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
@@ -174,7 +176,7 @@ display: flex;
     margin-left: 2px;
     margin-top: 17px;
     padding-right: 36px;
-    color: #000000;
+    color: var(--colour5);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -192,7 +194,7 @@ display: flex;
     height: 3px;
     bottom: 7px;
     left: 0;
-    background-color: #000000;
+    background-color: var(--colour5);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
@@ -206,7 +208,7 @@ display: flex;
     margin-left: 2px;
     margin-top: 17px;
     padding-right: 36px;
-    color: #000000;
+    color: var(--colour5);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -224,7 +226,7 @@ display: flex;
     height: 3px;
     bottom: 7px;
     left: 0;
-    background-color: #000000;
+    background-color: var(--colour5);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
@@ -238,7 +240,7 @@ display: flex;
     margin-left: 2px;
     margin-top: 17px;
     padding-right: 36px;
-    color: #000000;
+    color: var(--colour5);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -256,7 +258,7 @@ display: flex;
     height: 3px;
     bottom: 7px;
     left: 0;
-    background-color: #000000;
+    background-color: var(--colour5);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
@@ -270,7 +272,7 @@ display: flex;
     margin-left: 2px;
     margin-top: 17px;
     padding-right: 36px;
-    color: #000000;
+    color: var(--colour5);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -288,7 +290,7 @@ display: flex;
     height: 3px;
     bottom: 7px;
     left: 0;
-    background-color: #000000;
+    background-color: var(--colour5);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
@@ -337,17 +339,26 @@ display: flex;
       }
       
      
-.navbar{
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
-display: flex;
+.brand{
+
+  width: 282px;
 
 }
 
-.vv{ display: flex;
-  align-content: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: flex-end;
-  float: left;}
+  }
+
+  @media screen and (max-width: 399px) {
+
+.brand{
+
+  font-size: 1.5rem;
+
+}
 
   }

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import whitelogo from "../../assets/Whitelogofooter.svg";
 import "./footer.css";
 
 function Footer() {
@@ -20,26 +19,11 @@ function Footer() {
     };
   }, []);
 
-  const handleClick = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-  const handleClick1 = () => {
-    window.scrollTo({ top: 550, behavior: "smooth" });
-  };
-  const handleClick2 = () => {
-    window.scrollTo({ top: 1430, behavior: "smooth" });
-  };
-  // const handleClick3 = () => {
-  //   window.scrollTo({ top: 2500, behavior: "smooth" });
-  // };
-  const handleClick4 = () => {
-    window.scrollTo({ top: 2500, behavior: "smooth" });
-  };
   return (
     <footer className={`foot ${scrolled ? "scrolled" : ""}`}>
       <div className="row1">
         <div className="column about">
-          <img src={whitelogo} alt="Logo" className="logo1" />
+         <h3 className="pod">Valora</h3>
           <p className="za">
             We look for passionate people who love working on the latest
             technologies. We provide an environment conducive to personal and
@@ -103,17 +87,19 @@ function Footer() {
             Once you fill out this form, our sales representatives will contact
             you within 24 hours. They will further guide you from thereon.
           </p>
-          <div class="input-field">
+          <div className="fif">
+          <div class="input-field1">
             <input type="text" required spellcheck="false"></input>
-            <label>Your Name</label>
+            <label>First Name</label>
+          </div>
+          <div class="input-field1">
+            <input type="text" required spellcheck="false"></input>
+            <label>Last Name</label>
+          </div>
           </div>
           <div class="input-field">
             <input type="email" required spellcheck="false"></input>
             <label>Enter email</label>
-          </div>
-          <div class="input-field">
-            <input type="text" required spellcheck="false"></input>
-            <label>Subject</label>
           </div>
           <div class="input-field">
             <textarea

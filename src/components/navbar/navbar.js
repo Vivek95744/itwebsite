@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import logo from "../../assets/Blacklogonavbar.svg";
 import './navbar.css'
 
 function Navbar() {
@@ -67,14 +66,7 @@ function Navbar() {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <nav className={`responsive_nav ${scrolled ? "scrolled" : ""}`}>
         <div className='imgo'>
-        <img
-          className="logo"
-          src={logo}
-          alt="logo"
-          height={55}
-          width={55}
-        />
-        <h3 className="brand">Valora Infotech</h3></div>
+        <h3 className="brand" onClick={handleClick}>Valora Infotech</h3></div>
         <div className='navia'>
         <a className="Homenav" onClick={handleClick}>
           Home
@@ -92,20 +84,20 @@ function Navbar() {
           Contactus
         </a>
         </div>
-  <div className='vv'><nav className={`navbar ${scrolled ? "scrolled" : ""} ${expanded ? 'expanded' : ''}`} >
-      <div className="navbar-brand">
-        <button className="navbar-toggle" onClick={toggleNavbar}>
-          <span className="navbar-toggle-icon">&#9776;</span>
-        </button>
-      </div>
-      <ul className={`navbar-nav ${expanded ? 'expanded' : ''}`}>
-        <li className="nav-item"onClick={handleClick10}>Home</li>
-        <li className="nav-item"onClick={handleClick11}>About</li>
-        <li className="nav-item"onClick={handleClick12}>Services</li>
-        <li className="nav-item"onClick={handleClick14}>Portfolio</li>
-        <li className="nav-item"onClick={handleClick15}>Contactus</li>
-      </ul>
-    </nav></div>
+      <nav className={`navbar ${scrolled ? "scrolled" : ""} ${expanded ? 'expanded' : ''}`} >
+          <div className="navbar-brand">
+            <button className="navbar-toggle" onClick={toggleNavbar}>
+              <span className="navbar-toggle-icon">&#9776;</span>
+            </button>
+          </div>
+          <ul className={`navbar-nav ${expanded ? 'expanded' : ''}`}>
+            <li className="nav-item"onClick={handleClick10}>Home</li>
+            <li className="nav-item"onClick={handleClick11}>About</li>
+            <li className="nav-item"onClick={handleClick12}>Services</li>
+            <li className="nav-item"onClick={handleClick14}>Portfolio</li>
+            <li className="nav-item"onClick={handleClick15}>Contactus</li>
+          </ul>
+        </nav>
         
     </nav>
     </>

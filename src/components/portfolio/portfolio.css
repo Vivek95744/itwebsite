@@ -14,7 +14,7 @@
   display: block;
   width: 180px;
   height: 3px;
-  background-color: #47679f;
+  background-color: var(--colour5);
   position: absolute;
   bottom: -8px;
   left: calc(47% - 40px);
@@ -26,6 +26,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .buttn {
@@ -38,7 +39,7 @@
 
 .act {
   background-color: white;
-  border: 2px solid #47679f;
+  border: 2px solid var(--colour5);
   color: black;
   padding: 10px 20px;
   width: 10rem;
@@ -56,7 +57,7 @@
 }
 
 .active {
-  background-color: #47679f;
+  background-color: var(--colour5);
   color: #ffffff;
 }
 
@@ -192,6 +193,7 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+  
 }
 
 .close-button {
@@ -224,5 +226,11 @@
 @media screen and (max-width: 450px) {
   .act {
     width: 6rem;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .image-container {
+  width: 330px;
   }
 }

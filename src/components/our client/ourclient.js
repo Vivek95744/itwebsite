@@ -1,5 +1,10 @@
 import React from "react";
-import h from "../../assets/Ui-Uxdesigenimg.webp";
+import client1 from "../../assets/client-1.png";
+import client2 from "../../assets/client-2.png";
+import client3 from "../../assets/client-3.png";
+import client4 from "../../assets/client-4.png";
+import client5 from "../../assets/client-5.png";
+import client6 from "../../assets/client-6.png";
 import Marquee from "react-fast-marquee";
 import './ourclient.css';
 
@@ -7,7 +12,7 @@ function Ourclient() {
 
   const screenWidth = window.innerWidth;
 
-  let gradientWidth = 600;
+  let gradientWidth = 500;
 
   if (screenWidth <= 900 && screenWidth > 400) {
     gradientWidth = 200;
@@ -22,7 +27,7 @@ return (
             
             <div className="ani">
             <img
-              src={h}
+              src={client1}
               alt="Example"
               className="img15"
               height={100}
@@ -32,7 +37,7 @@ return (
 
             <div className="ani">
             <img
-              src={h}
+              src={client2}
               alt="Example"
               className="img15"
               height={100}
@@ -42,7 +47,7 @@ return (
 
             <div className="ani">
             <img
-              src={h}
+              src={client3}
               alt="Example"
               className="img15"
               height={100}
@@ -52,7 +57,7 @@ return (
 
             <div className="ani">
             <img
-              src={h}
+              src={client4}
               alt="Example"
               className="img15"
               height={100}
@@ -62,7 +67,7 @@ return (
 
             <div className="ani">
             <img
-              src={h}
+              src={client5}
               alt="Example"
               className="img15"
               height={100}
@@ -72,36 +77,13 @@ return (
 
             <div className="ani">
             <img
-              src={h}
+              src={client6}
               alt="Example"
               className="img15"
               height={100}
-              width={150}
+              width={100}
             />
             </div>
-
-            <div className="ani">
-            <img
-              src={h}
-              alt="Example"
-              className="img15"
-              height={100}
-              width={150}
-            />
-            </div>
-
-            <div className="ani">
-            <img
-              src={h}
-              alt="Example"
-              className="img15"
-              height={100}
-              width={150}
-            />
-            </div>
-
-           
-           
        
       </Marquee> 
 </div>

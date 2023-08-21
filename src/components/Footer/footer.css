@@ -1,5 +1,5 @@
 footer {
-    background-color: #47679f;
+    background-color: var(--colour1);
     color: #ffffff;
     font-size: 16px;
     width: 100%;
@@ -96,6 +96,42 @@ footer {
     justify-content: center;
 
   }
+
+  .fif{
+
+display: flex;
+width: 100%;
+gap: 50px;
+
+  }
+
+  .input-field1 {
+    position: relative;
+    margin-bottom: 15px;
+    width: 50%;
+  }
+  .input-field1 input {
+    width: 100%;
+    height: 45px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    outline: none;
+  }
+
+  .input-field1 label {
+    position: absolute;
+    top: 45%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 19px;
+    pointer-events: none;
+    transition: 0.3s;
+  }
   
   .input-field {
     position: relative;
@@ -144,7 +180,7 @@ footer {
   }
   
   .nm {
-    background-color: #2a8ded;
+    background-color: var(--colour5);
     color: #ffffff;
   }
 
@@ -153,8 +189,8 @@ footer {
     background: transparent;
 border: 2px solid #ffffff;
 width: 100% !important;
-min-height: 50px;
-max-height: 150px;
+min-height: 150px;
+max-height: 200px;
 color: #ffffff;
 
   }
@@ -201,13 +237,14 @@ color: #ffffff;
   }
   
   .subscribe button:hover {
-    background-color: #175ca0;
+    background-color: var(--colour4);
     cursor: pointer;
+    color: #000000;
   }
   
   .row3 {
     padding: 0.3em 1em;
-    background-color: #023a72;
+    background-color: var(--colour2);
   }
   
   .row3 p {
@@ -236,14 +273,14 @@ color: #ffffff;
     
     .ac{
     
-    font-size: 20px;
-    justify-content: center;
+  font-size: 20px;
     text-align: center;
     display: flex;
     margin-bottom: 3px !important;
     gap: 8px;
-    align-items: center;
     margin-top: 30px !important;
+    align-items: center;
+    justify-content: center;
     
     }
 
@@ -269,7 +306,7 @@ font-size: 1.1rem;
       align-items: center;
       width: 65px;
       height: 65px;
-      background-color: #3498db;
+      background-color: var(--colour5);
       border-radius: 50%;
       transition: background-color 0.3s ease-in-out;
       cursor: pointer;
@@ -287,6 +324,18 @@ font-size: 1.1rem;
       align-items: center;
     }
     
+.pod{
+
+  color: #ffffff;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 20px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  text-align: center;
+
+}
 
   @media screen and (max-width: 1050px) {
   .column {
