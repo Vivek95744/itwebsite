@@ -2,12 +2,13 @@
     overflow: hidden;
     height: 200px;
     margin-bottom: 70px;
+    background-color: white
 
 }
 
 .ani{
 
-    margin-left: 125px;
+  margin-left: 96px;
 
 }
 
@@ -34,27 +35,20 @@
   } */
 
   .tt {
-    font-size: 28px;
-    font-weight: bold;
-    font-family: 'Rubik', sans-serif;
-    color: #1e272e;
+    font-size: var(--fontsizeheading);
+    font-weight: var(--fontweightheading);
+    font-family: var(--fontfamilyheading);
+    color: var(--colorheading);
     text-align: center;
-    text-transform: uppercase;
+    text-transform: var(--texttransformheading);
     margin-bottom: 25px;
     position: relative;
+    text-decoration: underline;
+    text-decoration-color: var(--colour5);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
   }
   
-  .tt::after {
-    content: '';
-    display: block;
-    width: 80px;
-    height: 3px;
-    background-color: var(--colour5);
-    position: absolute;
-    bottom: -8px;
-    left: calc(50% - 40px);
-    border-radius: 2px;
-  }
   
   
   

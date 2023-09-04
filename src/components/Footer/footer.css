@@ -1,8 +1,9 @@
 footer {
-    background-color: var(--colour1);
+    /* background-color: var(--colour1); */
     color: #ffffff;
     font-size: 16px;
     width: 100%;
+    background: linear-gradient(87deg, rgba(0,40,58,1) 0%, rgba(0,0,106,1) 50%, rgba(0,71,182,1) 100%);
   }
   
   footer * {
@@ -24,13 +25,14 @@ footer {
   .row1 {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    gap: 100px;
+    gap: 59px;
     align-items: stretch;
+    padding: 20px;
   }
 
   .za{
 
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 
   }
 
@@ -101,7 +103,7 @@ footer {
 
 display: flex;
 width: 100%;
-gap: 50px;
+gap: 5px;
 
   }
 
@@ -117,8 +119,7 @@ gap: 50px;
     font-size: 18px;
     padding: 0 15px;
     border: 2px solid #fff;
-    background: transparent;
-    color: #fff;
+    color: #000;
     outline: none;
   }
 
@@ -127,7 +128,7 @@ gap: 50px;
     top: 45%;
     left: 15px;
     transform: translateY(-50%);
-    color: #fff;
+    color: #000;
     font-size: 19px;
     pointer-events: none;
     transition: 0.3s;
@@ -144,8 +145,7 @@ gap: 50px;
     font-size: 18px;
     padding: 0 15px;
     border: 2px solid #fff;
-    background: transparent;
-    color: #fff;
+    color: #000;
     outline: none;
   }
   .input-field label {
@@ -153,13 +153,13 @@ gap: 50px;
     top: 45%;
     left: 15px;
     transform: translateY(-50%);
-    color: #fff;
+    color: #000;
     font-size: 19px;
     pointer-events: none;
     transition: 0.3s;
   }
   input:focus {
-    border: 2px solid #ffcc00;
+    border: 2px solid #0047b6;
   }
   input:focus ~ label,
   input:valid ~ label {
@@ -167,7 +167,10 @@ gap: 50px;
     left: 15px;
     font-size: 16px;
     padding: 0 2px;
-    background: #47679f;
+    background: #fff;
+    border: 1px solid #0047b6;
+    color: #0047b6;
+    border-radius: 5px;
   }
   
   input,
@@ -201,12 +204,12 @@ color: #ffffff;
   font-size: 18px;
   padding: 10px 15px;
   border: 2px solid #fff;
-  background: transparent;
-  color: #fff;
+  background: #fff;
+  color: #000;
   outline: none;
 }
   .ii:focus {
-    border: 2px solid #ffcc00;
+    border: 2px solid #0047b6;
   }
   
   .ii:focus ~ label,
@@ -215,7 +218,10 @@ color: #ffffff;
     left: 15px;
     font-size: 16px;
     padding: 0 2px;
-    background: #47679f;
+    background: #fff;
+    border: 1px solid #0047b6;
+    color: #0047b6;
+    border-radius: 5px;
   }
   
   .ii,
@@ -237,14 +243,14 @@ color: #ffffff;
   }
   
   .subscribe button:hover {
-    background-color: var(--colour4);
-    cursor: pointer;
-    color: #000000;
+    background-color: #00006a;
+    cursor: pointer
   }
   
   .row3 {
     padding: 0.3em 1em;
     background-color: var(--colour2);
+    background: linear-gradient(87deg, rgba(0,40,58,1) 0%, rgba(0,0,106,1) 50%, rgba(0,71,182,1) 100%);
   }
   
   .row3 p {
@@ -297,6 +303,7 @@ font-size: 1.1rem;
       margin-top: 20px;
       align-items: center;
       justify-content: center;
+      margin-bottom: -45px;
 
     }
 
@@ -313,7 +320,8 @@ font-size: 1.1rem;
     }
     
     .icon-container:hover {
-      background-color: #ffffff;
+      background-color: #00006a;
+      
     }
     
     .icon {

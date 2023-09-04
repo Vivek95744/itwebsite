@@ -9,28 +9,34 @@ import Marquee from "react-fast-marquee";
 import './ourclient.css';
 
 function Ourclient() {
-
   const screenWidth = window.innerWidth;
 
-  let gradientWidth = 500;
+  let gradientWidth = 700;
 
   if (screenWidth <= 900 && screenWidth > 400) {
-    gradientWidth = 200;
+    gradientWidth = 150;
   } else if (screenWidth <= 400) {
     gradientWidth = 100;
   }
 
-return (
-<div className="kk">
-    <h3 className="tt">Our Client</h3>
-<Marquee className="scroll-container1" pauseOnHover={true} gradient={true} autoFill={true} gradientWidth={gradientWidth}>
+  return (
+    <div className="kk">
+      <h3 className="tt animate-on-scroll-left">Our Client</h3>
+      <Marquee
+        className="scroll-container1"
+        pauseOnHover={true}
+        gradient={true}
+        autoFill={true}
+        gradientWidthFactor={gradientWidth} 
+        gradientColor={[225, 237, 255]}
+      >
             
             <div className="ani">
             <img
               src={client1}
               alt="Example"
               className="img15"
-              height={100}
+              height={150}
               width={150}
             />
             </div>
@@ -40,7 +46,7 @@ return (
               src={client2}
               alt="Example"
               className="img15"
-              height={100}
+              height={150}
               width={150}
             />
             </div>
@@ -50,7 +56,7 @@ return (
               src={client3}
               alt="Example"
               className="img15"
-              height={100}
+              height={150}
               width={150}
             />
             </div>
@@ -60,7 +66,7 @@ return (
               src={client4}
               alt="Example"
               className="img15"
-              height={100}
+              height={150}
               width={150}
             />
             </div>
@@ -70,7 +76,7 @@ return (
               src={client5}
               alt="Example"
               className="img15"
-              height={100}
+              height={150}
               width={150}
             />
             </div>
@@ -80,8 +86,8 @@ return (
               src={client6}
               alt="Example"
               className="img15"
-              height={100}
-              width={100}
+              height={150}
+              width={150}
             />
             </div>
        

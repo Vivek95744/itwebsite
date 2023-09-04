@@ -1,19 +1,19 @@
 import React from 'react'
 import webdevlopment from "../../assets/Webdevlopmentimg.svg";
-import socialmediaia from "../../assets/Socialmediaimg.svg";
-import emailmarketing from "../../assets/Emailmarketingimg.webp";
+import appdevlopment from "../../assets/appdevlopmentimg.svg";
+import desktopapp from "../../assets/0_gh3MJ-gQ3enn_8ew-removebg-preview.png";
 import uiuxdesigener from "../../assets/Ui-Uxdesigenimg.webp";
 import hosting from "../../assets/Hostingimg.webp";
-import appdevlopment from "../../assets/appdevlopmentimg.svg";
+import gamedevlopment from "../../assets/gamedevlopment.png";
 import './service.css';
 
 function Service() {
   return (
-    <div className="servi">
-    <h3 className="service"> Services </h3>
+    <div className="servi"  id='service'>
+    <h3 className="service underline-style"> Services </h3>
     <h4 className="slogan">The full service we are offering is specifically<br></br> designed to meet your business needs.</h4>
-    <div className="container3">
-      <div class="Box">
+    <div className="container3 ">
+      <div class="Box animate-on-scroll-top">
         <img
           className="img4"
           src={webdevlopment}
@@ -26,11 +26,11 @@ function Service() {
         Best website design and development,<br></br> responsive web design services<br></br> at affordable price without <br></br>compromising in quality.
         </p>
       </div>
-      <div class="Box">
+      <div class="Box animate-on-scroll-top">
         <img
           className="img4"
-          src={socialmediaia}
-          alt="socialmediaia"
+          src={appdevlopment}
+          alt="Mobile App Development"
           height={100}
           width={150}
         />
@@ -39,11 +39,11 @@ function Service() {
         Grow your business with your <br></br>mobile app. Tryon InfoSoft will <br></br>help you to achieve your <br></br>business goals.
         </p>
       </div>
-      <div class="Box">
+      <div class="Box animate-on-scroll-top">
         <img
           className="img4"
-          src={emailmarketing}
-          alt="emailmarketing"
+          src={hosting}
+          alt="hosting"
           height={100}
           width={150}
         />
@@ -53,7 +53,7 @@ function Service() {
         </p>
       </div>
     
-      <div class="Box">
+      <div class="Box animate-on-scroll-top">
         <img
           className="img4"
           src={uiuxdesigener}
@@ -66,11 +66,11 @@ function Service() {
         We are a team of dedicated UI UX <br></br>Designer who believes in building<br></br> world-class design for your web <br></br>and mobile application.
         </p>
       </div>
-      <div class="Box">
+      <div class="Box animate-on-scroll-top">
         <img
           className="img4"
-          src={hosting}
-          alt="hosting"
+          src={desktopapp}
+          alt="Desktop Application Development"
           height={100}
           width={150}
         />
@@ -79,13 +79,13 @@ function Service() {
         Go for desktop apps development to <br></br>simplify all your business processes. <br></br>We provide High quality and <br></br>user-friendly desktop applications.
         </p>
       </div>
-      <div class="Box">
+      <div class="Box animate-on-scroll-top">
         <img
           className="img4"
-          src={appdevlopment}
-          alt="appdevlopment"
+          src={gamedevlopment}
+          alt="gamedevlopment"
           height={100}
-          width={150}
+          width={120}
         />
         <div className="text11">Game Development</div>
         <p className="Text11">

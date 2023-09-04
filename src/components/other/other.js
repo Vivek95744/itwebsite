@@ -1,18 +1,20 @@
 import React from "react";
 import CountUp from "react-countup";
-import meeting from "../../assets/pexels-rebrand-cities-1367276.jpg";
+import { Link } from 'react-scroll';
+import meeting from "../../assets/webex-chat.avif";
 import "./other.css";
 
-const handleClick22 = () => {
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-  const topPosition = isMobile ? 7800 : 4330;
-
-  window.scrollTo({ top: topPosition, behavior: "smooth" });
+const scrollTodown = () => {
+  window.scrollTo({
+    top: 10000,
+    behavior: 'smooth',
+  });
 };
+
 function Other() {
   return (
     <>
-      <div className="other">
+      <div className="other animate-on-scroll-left">
         <h3 className="tex">Why Choose Us?</h3>
         <h4 className="Tex">
           We provide excellent software development services to make innovative
@@ -22,9 +24,9 @@ function Other() {
       </div>
       <div className="other1">
         <div className="Others">
-          <img className="img55" src={meeting} alt="Example" />
+          <img className="img55 animate-on-scroll-top" src={meeting} alt="Example" />
         </div>
-        <div className="Others1">
+        <div className="Others1 animate-on-scroll-bottom">
           <p className="tex1">
             We have highly skilled engineers with excellent technical knowledge
             and experience in using latest software standards, tools, platforms,
@@ -114,7 +116,7 @@ function Other() {
           </div>
         </div>
       </div>
-      <div className="counter">
+      <div className="counter animate-on-scroll-left">
         <div className="counte">
           <CountUp start={0} end={9} duration={3} />
           <p className="l">Clients</p>
@@ -133,16 +135,16 @@ function Other() {
         </div>
       </div>
       <div className="re">
-        <h3 className="toc">GET IN TOUCH</h3>
-        <h4 className="Toc">
+        <h3 className="toc animate-on-scroll-top">GET IN TOUCH</h3>
+        <h4 className="Toc animate-on-scroll-top">
           Have any questions? Reach out to us from our contact form and we will
           get back to you shortly.
         </h4>
         <div className="Re">
-          <div class="wrapper">
-            <a className="battan" onClick={handleClick22}>
-              <span>START A PROJECT WITH US</span>
-            </a>
+          <div class="wrapper animate-on-scroll-top">
+          <Link onClick={scrollTodown} className="battan qwqw">
+        <span>START A PROJECT WITH US</span>
+      </Link>
           </div>
         </div>
       </div>

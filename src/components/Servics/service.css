@@ -1,49 +1,54 @@
 .servi {
     width: 100%;
-    margin-top: -99px;
-    background-color: var(--colour3);
+
   }
   
 
 
   .service {
-    font-size: 24px;
-    font-weight: bold;
-    color: #1e272e;
-    font-family: 'Rubik', sans-serif;
-    padding-top: 20px;
+    font-size: var(--fontsizeheading);
+    font-weight: var(--fontweightheading);
+    color: var(--colorheading);
+    font-family: var(--fontfamilyheading);
+    padding-top: 65px;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: var(--texttransformheading);
     margin-bottom: 20px;
     position: relative;
-  }
+    text-decoration: underline;
+    text-decoration-color: var(--colour5);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+
+}
   
-  .service::after {
-    content: '';
-    display: block;
-    width: 70px;
-    height: 3px;
-    background-color: var(--colour5);
-    position: absolute;
-    bottom: -8px;
-    left: calc(49.7% - 30px);
-    border-radius: 2px;
-  }
-  
-  
+.animate-on-scroll-top {
+  opacity: 0;
+  transform: translateY(50px); /* Start from top */
+  transition: opacity 0.5s ease-in, transform 2s;
+}
+
+.animate-on-scroll-top.animate {
+  opacity: 1;
+  transform: translateY(0); /* Move to original position */
+}
+
   .slogan {
-    font-size: 1.4rem;
-    color: #000000;
+    font-size: var(--fontsizetitle);
+    color: var(--colortitle);
     text-align: center;
     line-height: 30px;
     text-justify: inter-word;
     font-weight: 500;
+    margin-bottom: 50px;
+
   }
   
   .Box {
     background-color: rgb(255, 255, 255);
-    width: 31%;
-    margin: 48px 16px;
+    min-width: 350px;
+    display: flex;
+    margin: 10px 10px;
     border-radius: 20px;
     cursor: pointer;
     border-radius: 20px;
@@ -54,8 +59,12 @@
     transition-property: box-shadow, transform;
     transition-duration: 350ms;
     transition-timing-function: ease-in-out;
-  
-    box-shadow: 2px 1px 20px 2px rgba(210, 210, 210, 0.75);
+    box-shadow: 2px 1px 20px 2px rgba(186, 185, 185, 0.50);
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
   
   
@@ -72,12 +81,14 @@
     white-space: nowrap;
     text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 85px;
     margin-top: -128px;
-    margin-bottom: -237px;
+    margin-bottom: -308px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
   }
   
   .img4 {
@@ -90,12 +101,13 @@
     color: rgb(0, 0, 0);
     font-weight: bold;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   
   .Text11 {
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 8px;
     
   }
 
@@ -110,25 +122,20 @@
     justify-content: center;
     padding: 85px;
     margin-top: -128px;
-    margin-bottom: -237px;
+    margin-bottom: -308px;
     flex-wrap: wrap;
 
 }
 
-.Box{
-
-    width: 573px;
-
-}
 
 .text11{
 
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .Text11{
 
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 12px;
 
 }
@@ -147,7 +154,7 @@
     
         font-size: 1rem;
         padding: 12px;
-        width: 324px;
+        width: 317px;
     
     }
 

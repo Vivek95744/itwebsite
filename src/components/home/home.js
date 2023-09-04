@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import mainimg from "../../assets/main banner.svg";
 import Typewriter from "typewriter-effect";
 import "./home.css";
+
 // back to top button
 function Home() {
 const [isVisible, setIsVisible] = useState(false);
@@ -26,18 +27,16 @@ const [isVisible, setIsVisible] = useState(false);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleClick7 = () => {
-    window.scrollTo({ top: 550, behavior: "smooth" });
-  };
+  
 
   return (
     <>
-      <div className="container">
-        <div className="row">
+      <div className="container" id="home" >
+        <div className="row animate-on-scroll1">
           <p className="Text">Welcome To Valora Infotech,</p>
           <p className="text">
-            Our Mission Is &nbsp;
-            <div className="typewriter-container">
+            Our Mission Is&nbsp;
+            <div className="typewriter-container ">
   <Typewriter 
     options={{
       strings: [
@@ -54,14 +53,16 @@ const [isVisible, setIsVisible] = useState(false);
  
 </div>
           </p>
-           <div className="bt">
-        <button class="btn" onClick={handleClick7} > 
+           {/* <div className="bt">
+           <Link to="about" className="qwqw">
+        <button className="btn">
           <span>Start</span>
         </button>
-      </div>
+      </Link>
+      </div> */}
         </div>
-        <div className="row2"></div>
-        <img className="img" src={mainimg} alt="Example" height={450} width={450} />
+        <div className="row2 "></div>
+        <img className="img animate-on-scroll2" src={mainimg} alt="mainimg" height={450} width={450} />
       </div>
       <div
       className={`back-to-top-button ${isVisible ? 'visible' : ''}`}

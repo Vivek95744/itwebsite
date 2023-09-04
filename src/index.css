@@ -1,14 +1,32 @@
 
 :root{
 
---colour1: #2c2b30;
---colour2: #4f4f51;
+/* --colour1: #141414; */
+--colour1: rgb(30, 30, 116);
+/* --colour2: #2b2b2b; */
+--colour2: rgb(5, 5, 64);
 --colour3: #eaeaea;
 --colour4: #ffb0c1;
---colour5: #2c80ff;
+--colour5: #0047b6;
+--colour6: #ffffff;
 
+--fontsizeheading: 28px;
+--fontsizetitle: 18px;
+--fontsizedis: 16px;
+
+--fontweightheading: bold;
+
+--colorheading: #1e272e;
+--colortitle: #000000;
+--colordis: #666;
+
+--texttransformheading: uppercase;
+
+--fontfamilyheading: 'Rubik', sans-serif;
 
 }
+
+
 
 
 body {
