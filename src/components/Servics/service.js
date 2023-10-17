@@ -36,7 +36,7 @@ function Service() {
         />
         <div className="text11">Mobile App Development</div>
         <p className="Text11">
-        Grow your business with your <br></br>mobile app. Tryon InfoSoft will <br></br>help you to achieve your <br></br>business goals.
+        Grow your business with your <br></br>mobile app. Tryon Valora Infotech will <br></br>help you to achieve your <br></br>business goals.
         </p>
       </div>
       <div class="Box animate-on-scroll-top">
@@ -64,19 +64,6 @@ function Service() {
         <div className="text11">UI/UX Design</div>
         <p className="Text11">
         We are a team of dedicated UI UX <br></br>Designer who believes in building<br></br> world-class design for your web <br></br>and mobile application.
-        </p>
-      </div>
-      <div class="Box animate-on-scroll-top">
-        <img
-          className="img4"
-          src={desktopapp}
-          alt="Desktop Application Development"
-          height={100}
-          width={150}
-        />
-        <div className="text11">Desktop Application Development</div>
-        <p className="Text11">
-        Go for desktop apps development to <br></br>simplify all your business processes. <br></br>We provide High quality and <br></br>user-friendly desktop applications.
         </p>
       </div>
       <div class="Box animate-on-scroll-top">
