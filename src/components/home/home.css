@@ -33,6 +33,14 @@ padding: 40px;
   color: white;
 }
 
+.Text101 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: white;
+  margin-top: 0;
+  
+}
+
 .text {
     display: flex;
     font-size: 2.4rem;
@@ -205,6 +213,12 @@ font-size: 1.7rem;
 
   }
 
+  .Text101{
+
+    font-size: 1.7rem;
+    
+      }
+
 }
 
 @media screen and (max-width: 750px) {
@@ -216,6 +230,12 @@ font-size: 1.7rem;
 }
 
 .Text{
+
+  font-size: 1.5rem;
+
+}
+
+.Text101{
 
   font-size: 1.5rem;
 
@@ -257,6 +277,12 @@ font-size: 1.7rem;
     font-size: 1.3rem;
   
   }
+
+  .Text101{
+  
+    font-size: 1.3rem;
+  
+  }
   
   .img{
   
@@ -291,6 +317,12 @@ font-size: 1.7rem;
   }
   
   .Text{
+  
+    font-size: 1.1rem;
+  
+  }
+
+  .Text101{
   
     font-size: 1.1rem;
   

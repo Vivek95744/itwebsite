@@ -1,7 +1,6 @@
 import React from 'react'
 import webdevlopment from "../../assets/Webdevlopmentimg.svg";
 import appdevlopment from "../../assets/appdevlopmentimg.svg";
-import desktopapp from "../../assets/0_gh3MJ-gQ3enn_8ew-removebg-preview.png";
 import uiuxdesigener from "../../assets/Ui-Uxdesigenimg.webp";
 import hosting from "../../assets/Hostingimg.webp";
 import gamedevlopment from "../../assets/gamedevlopment.png";
