@@ -307,6 +307,37 @@ text-decoration: none;
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+  .Blognav {
+    margin-top: 17px;
+    padding-right: 36px;
+    color: var(--colour6);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .Blognav::after {
+    content: "";
+    position: absolute;
+    width: 56%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 7px;
+    left: 0;
+    background-color: var(--colour6);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .Blognav:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
   
   .contectusnav {
     margin-left: 2px;
@@ -367,6 +398,12 @@ text-decoration: none;
       }
       
       .teamnav{
+      
+        display: none;
+      
+      }
+
+      .Blognav{
       
         display: none;
       

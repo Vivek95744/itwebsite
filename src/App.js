@@ -1,27 +1,21 @@
 import React from 'react';
 import './App.css'; 
-import Navbar from './components/navbar/navbar'
-import Home from './components/home/home'
-import About from './components/About/about'
-import Service from './components/Servics/service';
-import Other from './components/other/other';
-import Portfolio from './components/portfolio/portfolio';
-import Ourclient from './components/our client/ourclient';
-import Footer from './components/Footer/footer';
+import Landingpage from './components/landing page/landingpage';
+import Blog from './components/Blog/blog'
+import Blog1 from './components/Blog1/blog1'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar />  
-      <Home />
-      <About />
-      <Service />
-      <Other />
-      <Portfolio />
-      <Ourclient />
-      <Footer />
-
+      <Router>
+      <Routes>
+      <Route path="/" element={<Landingpage />} />
+      <Route path="/privacy-policy" element={<Blog />} />
+      <Route path="/terms-and-conditions" element={<Blog1 />} />
+      </Routes>
+      </Router>
     </div>
   );
 }
